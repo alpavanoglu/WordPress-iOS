@@ -162,6 +162,19 @@ class NotificationSyncMediator {
         mark(notification, asRead: true, completion: completion)
     }
 
+    /// Marks an array of notifications as Read.
+    ///
+    /// - Note: This method should only be used on the main thread.
+    ///
+    /// - Parameters:
+    ///     - notifications: The notification that was just read.
+    ///     - completion: Callback to be executed on completion.
+    ///
+    func markAsRead(_ notifications: [Notification], completion: ((Error?)-> Void)? = nil) {
+        // TODO: Update after WKit is updated.
+//        mark(notifications.first!, asRead: true, completion: completion)
+    }
+
     /// Marks a Notification as Unead.
     ///
     /// - Note: This method should only be used on the main thread.
