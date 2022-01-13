@@ -569,7 +569,7 @@ DEPENDENCIES:
   - SVProgressHUD (= 2.2.5)
   - WordPress-Editor-iOS (~> 1.19.7)
   - WordPressAuthenticator (~> 1.42.2)
-  - WordPressKit (~> 4.45.0)
+  - WordPressKit (from `https://github.com/alpavanoglu/WordPressKit-iOS.git`, branch `feature/17135-notifications_mark_all_read_support`)
   - WordPressMocks (~> 0.0.15)
   - WordPressShared (~> 1.17.0)
   - WordPressUI (~> 1.12.3)
@@ -619,7 +619,6 @@ SPEC REPOS:
     - UIDeviceIdentifier
     - WordPress-Aztec-iOS
     - WordPress-Editor-iOS
-    - WordPressKit
     - WordPressMocks
     - WordPressShared
     - WordPressUI
@@ -732,6 +731,9 @@ EXTERNAL SOURCES:
     :git: https://github.com/wordpress-mobile/gutenberg-mobile.git
     :submodules: true
     :tag: v1.69.0
+  WordPressKit:
+    :branch: feature/17135-notifications_mark_all_read_support
+    :git: https://github.com/alpavanoglu/WordPressKit-iOS.git
   Yoga:
     :podspec: https://raw.githubusercontent.com/wordpress-mobile/gutenberg-mobile/v1.69.0/third-party-podspecs/Yoga.podspec.json
 
@@ -747,6 +749,9 @@ CHECKOUT OPTIONS:
     :git: https://github.com/wordpress-mobile/gutenberg-mobile.git
     :submodules: true
     :tag: v1.69.0
+  WordPressKit:
+    :commit: ad3ca26a8742fc55fd55f605535cb81d91a09f03
+    :git: https://github.com/alpavanoglu/WordPressKit-iOS.git
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
@@ -849,6 +854,6 @@ SPEC CHECKSUMS:
   ZendeskSupportSDK: 3a8e508ab1d9dd22dc038df6c694466414e037ba
   ZIPFoundation: e27423c004a5a1410c15933407747374e7c6cb6e
 
-PODFILE CHECKSUM: a55008414112e40f3bd0b4d51b931ad434f98a22
+PODFILE CHECKSUM: 3fd82d9a1d3537bc86fa456cfa1db7d46127da0a
 
 COCOAPODS: 1.11.2
